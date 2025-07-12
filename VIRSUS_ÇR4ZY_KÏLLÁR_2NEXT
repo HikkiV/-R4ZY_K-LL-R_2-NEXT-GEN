@@ -23,7 +23,6 @@ cat << "EOF"
 
 
 
-
  @@@@@                                        @@@@@
 @@@@@@@                                      @@@@@@@
 @@@@@@@           @@@@@@@@@@@@@@@            @@@@@@@
@@ -52,12 +51,11 @@ EOF
 sleep 3
 echo ""
 echo -e "\e[1;35mPick:\e[0m"
-echo "1) YES😈"
-echo "2) NO👿"
-echo -n "Your choice: "
-read choice
+echo -e "1) YES😈"
+echo -e "2) NO👿"
+read -p "Choose (1/2): " choice </dev/tty
 
-case $choice in
+case "$choice" in
     1)
         echo -e "\nOK..."
         sleep 2
