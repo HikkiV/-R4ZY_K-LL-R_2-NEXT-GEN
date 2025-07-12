@@ -1,0 +1,95 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+bar_width=30
+filesize=400  # MB
+download_speed=21  # MBps
+filename="ÇR4ZY_KÏLLÁR_2.sh"
+
+echo " ⚠️ DISCLAIMER ⚠️"
+echo "This is a Fake Virus script to Prank your friends :D.
+All downloads and scripts are fake and only made for fun."
+sleep 5
+
+clear
+for i in {1..3}; do
+    for dots in "." ".." "..."; do
+        echo -ne "Executing Command$dots   \r"
+        sleep 0.5
+    done
+done
+
+clear
+echo "
+
+
+
+
+       .ed"""" """$$$$be.
+     -"           ^""**$$$e.
+   ."                   '$$$c
+  /                      "4$$b
+ d  3                      $$$$
+ $  *                   .$$$$$$
+.$  ^c           $$$$$e$$$$$$$$.
+d$L  4.         4$$$$$$$$$$$$$$b
+$$$$b ^ceeeee.  4$$ECL.F*$$$$$$$
+$$$$P d$$$$F $ $$$$$$$$$- $$$$$$
+3$$$F "$$$$b   $"$$$$$$$  $$$$*"
+ $$P"  "$$b   .$ $$$$$...e$$
+  *c    ..    $$ 3$$$$$$$$$$eF
+    %ce""    $$$  $$$$$$$$$$*
+     *$e.    *** d$$$$$"L$$
+      $$$      4J$$$$$% $$$
+     $"'$=e....$*$$**$cz$$"
+     $  *=%4.$ L L$ P3$$$F
+     $   "%*ebJLzb$e$$$$$b
+      %..      4$$$$$$$$$$
+       $$$e   z$$$$$$$$$$
+        "*$c  "$$$$$$$P"
+          """*$$$$$$$"
+
+ÇR4ZY_KÏLLÁR VIRUS BY xXFinFin99872Xx😈"
+sleep 3
+echo "Pick: "
+sleep 2
+select choice in "YES😈" "NO👿"; do
+    case $REPLY in
+        1)
+            echo "OK..."
+            sleep 2
+            say goodbye😈
+            for i in $(seq 1 100); do
+    percent=$i
+    filled=$((i * bar_width / 100))
+    empty=$((bar_width - filled))
+    downloaded=$((filesize * i / 100))
+
+    bar=$(printf "%0.s=" $(seq 1 $filled))
+    bar+=">"
+    bar+=$(printf "%0.s " $(seq 1 $empty))
+
+    scroll_idx=$((i % (${#filename} - 4)))
+    scroll_name="${filename:scroll_idx:5}"
+
+    printf "\r\e[36m%s \e[0m|[%s]| \e[33m%3d%% \e[32m%5dMB \e[34m%dMB/s\e[0m" "$scroll_name" "$bar" "$percent" "$downloaded" "$download_speed"
+    sleep 0.15
+done
+for i in {1..3}; do
+    for dots in "." ".." "..."; do
+        echo -ne "Executing ÇR4ZY_KÏLLÁR_2.sh$dots   \r"
+        sleep 0.5
+    done
+done
+clear
+            break
+            ;;
+        2)
+            echo "You will regret this..."
+            sleep 2
+            break
+            ;;
+        *)
+            echo "Invalid choice 🗿"
+            ;;
+    esac
+done
